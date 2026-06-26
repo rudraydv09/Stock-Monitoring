@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 const Orders = () => {
-  const [allOrders, setAllOrders] = useState([]);
+  const [newOrder, setAllOrders] = useState([]);
 
   useEffect(() => {
     axios
-      .get("https://stock-monitoring-yhpo.onrender.com/allOrders")
+      .get("https://stock-monitoring-yhpo.onrender.com/newOrder")
       .then((res) => {
         setAllOrders(res.data);
       })
@@ -15,7 +15,7 @@ const Orders = () => {
 
   return (
     <>
-      <h3 className="title">Orders ({allOrders.length})</h3>
+      <h3 className="title">Orders ({newOrder.length})</h3>
 
       <div className="order-table">
         <table>
@@ -29,7 +29,7 @@ const Orders = () => {
           </thead>
 
           <tbody>
-            {allOrders.map((order, index) => (
+            {newOrder.map((order, index) => (
               <tr key={index}>
                 <td>{order.name}</td>
                 <td>{order.qty}</td>
@@ -47,7 +47,7 @@ const Orders = () => {
           </tbody>
         </table>
 
-        {allOrders.length === 0 && (
+        {newOrder.length === 0 && (
           <div style={{ textAlign: "center", marginTop: "40px" }}>
             <p>You haven't placed any orders yet.</p>
           </div>
