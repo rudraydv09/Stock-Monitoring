@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Hero() {
     return (
@@ -20,7 +21,7 @@ function Hero() {
                         ETFs, bonds, and more.
                     </p>
 
-                    <button
+                    <Link to='https://stock-monitoring-dashboard.onrender.com'
                         className="btn btn-primary btn-lg mt-3"
                         style={{
                             width: "250px",
@@ -28,7 +29,7 @@ function Hero() {
                         }}
                     >
                         Dashboard
-                    </button>
+                    </Link>
                 </div>
             </div>
         </div>
