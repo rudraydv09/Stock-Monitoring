@@ -11,20 +11,25 @@ const BuyActionWindow = ({ uid }) => {
   const [stockQuantity, setStockQuantity] = useState(1);
   const [stockPrice, setStockPrice] = useState(0.0);
 
-  const handleBuyClick = () => {
-    axios.post("https://stock-monitoring-yhpo.onrender.com/newOrder", {
-      name: uid,
-      qty: stockQuantity,
-      price: stockPrice,
-      mode: "BUY",
-    });
+const handleBuyClick = async () => {
+  try {
+    const res = await axios.post(
+      "https://stock-monitoring-yhpo.onrender.com/newOrder",
+      {
+        name: uid,
+        qty: stockQuantity,
+        price: stockPrice,
+        mode: "BUY",
+      }
+    );
+
+    console.log("Success:", res.data);
 
     GeneralContext.closeBuyWindow();
-  };
-
-  const handleCancelClick = () => {
-    GeneralContext.closeBuyWindow();
-  };
+  } catch (err) {
+    console.error(err);
+  }
+};
 
   return (
     <div className="container" id="buy-window" draggable="true">
