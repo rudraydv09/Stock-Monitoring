@@ -13,7 +13,7 @@ function Navbar() {
                     <form class="d-flex" role="search">
                         <ul class="navbar-nav mb-lg-0">
                             <li class="nav-item">
-                                <Link class="nav-link active" aria-current="page" to="http://localhost:3001" target="_blank"
+                                <Link class="nav-link active" aria-current="page" to="https://stock-monitoring-dashboard.onrender.com" target="_blank"
                                     rel="noopener noreferrer">Dashboard</Link>
                             </li>
                             <li class="nav-item">

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function OpenAccount() {
   return (
@@ -14,7 +15,7 @@ function OpenAccount() {
             and F&O trades.
           </p>
 
-          <button
+          <Link to='https://stock-monitoring-dashboard.onrender.com'
             className="btn btn-primary btn-lg"
             style={{
               width: "250px",
@@ -22,7 +23,7 @@ function OpenAccount() {
             }}
           >
             Dashboard
-          </button>
+          </Link>
         </div>
       </div>
     </div>
