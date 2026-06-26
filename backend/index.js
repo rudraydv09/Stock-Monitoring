@@ -213,7 +213,7 @@ app.post("/newOrder", async (req, res) => {
     await newOrder.save();
 
     res.status(201).json({ message: "Order saved!" });
-  } catch (err) {
+  } catch (err) {      
     console.error(err);
     res.status(500).json({ error: err.message });
   }
