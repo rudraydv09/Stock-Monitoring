@@ -201,17 +201,23 @@ app.get('/allPositions', async (req, res) => {
     res.json(allPositions);
 });
 
-app.post('/newOrder', async (req, res) => {
-    let newOrder = new OrdersModel({
-        name: req.body.name,
-        qty: req.body.qty,
-        price: req.body.price,
-        mode: req.body.mode,
+app.post("/newOrder", async (req, res) => {
+  try {
+    const newOrder = new OrdersModel({
+      name: req.body.name,
+      qty: req.body.qty,
+      price: req.body.price,
+      mode: req.body.mode,
     });
 
     await newOrder.save();
-    res.send("Order saved!");
-})
+
+    res.status(201).json({ message: "Order saved!" });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: err.message });
+  }
+});
 
 
 app.listen(PORT, () => {
