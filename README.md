@@ -76,8 +76,8 @@ Stock-Monitoring/
 </p>
 
 <p align="center">
-  <img src="./screenshots/orderStock.png" width="45%">
-  <img src="./screenshots/buy.png" width="45%">
+  <img src="./screenshots/order.png" width="45%">
+  <img src="./screenshots/buyStock.png" width="45%">
 </p>
 
 <p align="center">
