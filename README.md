@@ -5,10 +5,10 @@ A full-stack stock monitoring platform, built using the MERN stack. The applicat
 ## 🚀 Live Demo
 
 ### 🌐 Landing Website
-https://your-frontend-url.onrender.com
+https://stock-monitoring-frontend-hvhe.onrender.com/
 
 ### 📊 Trading Dashboard
-https://your-dashboard-url.onrender.com
+https://stock-monitoring-dashboard.onrender.com/
 
 ## ✨ Features
 
@@ -70,22 +70,25 @@ Stock-Monitoring/
 
 ## 📸 Screenshots
 
-### Landing Page
+<p align="center">
+  <img src="./screenshots/home.png" width="45%">
+  <img src="./screenshots/home2.png" width="45%">
+</p>
 
-![Landing Page](screenshots/home.png)
+<p align="center">
+  <img src="./screenshots/order.png" width="45%">
+  <img src="./screenshots/buy.png" width="45%">
+</p>
 
-### Dashboard
+<p align="center">
+  <img src="./screenshots/holding.png" width="45%">
+  <img src="./screenshots/holding1.png" width="45%">
+</p>
 
-![Dashboard](screenshots/dashboard.png)
-
-### Holdings
-
-![Holdings](screenshots/holdings.png)
-
-### Orders
-
-![Orders](screenshots/orders.png)
-
+<p align="center">
+  <img src="./screenshots/position.png" width="45%">
+  <img src="./screenshots/funds.png" width="45%">
+</p>
 ---
 
 ## ⚙️ Installation
