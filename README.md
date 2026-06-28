@@ -76,13 +76,13 @@ Stock-Monitoring/
 </p>
 
 <p align="center">
-  <img src="./screenshots/order.png" width="45%">
+  <img src="./screenshots/orderStock.png" width="45%">
   <img src="./screenshots/buy.png" width="45%">
 </p>
 
 <p align="center">
   <img src="./screenshots/holding.png" width="45%">
-  <img src="./screenshots/holding1.png" width="45%">
+  <img src="./screenshots/holding2.png" width="45%">
 </p>
 
 <p align="center">
